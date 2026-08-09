@@ -1,0 +1,175 @@
+<link rel="stylesheet" href="assets/css/standard-font-safe.css">
+ <!DOCTYPE html>
+ <html lang="zxx">
+ <!--<< Head Area >>-->
+ <?php include './partials/head.php' ?>
+
+ <body>
+ <div class="boxed_wrapper ltr <?php echo (isset($themeMode) && $themeMode) ? 'dark_home' : ''; ?>">
+
+         <!-- Preloader -->
+         <?php include './partials/preloader.php' ?>
+
+         <!-- page-direction -->
+         <?php include './partials/pagedirection.php' ?>
+
+         <!--Search Popup-->
+         <?php include './partials/searchPopup.php' ?>
+ 
+<!-- Main Header -->
+<?php 
+        // Get the current page filename without extension
+         
+        
+        switch ($page) {
+            case 'header1':
+                include './partials/header.php';
+                break;
+            case 'header2':
+                include './partials/header-2.php';
+                break;
+            case 'header3':
+                include './partials/header-3.php';
+                break;
+            case 'header4':
+                include './partials/header-4.php';
+                break;
+            case 'header5':
+                include './partials/header-5.php';
+                break;
+            
+            default:
+                '';
+        }
+        ?>
+        <!-- Main Header End -->
+         <!-- Mobile Menu -->
+         <?php include './partials/MobileMenu.php' ?>
+         <!-- End Mobile Menu -->
+
+
+
+<!-- page-title -->
+<section class="page-title centred pt_90 pb_0">
+    <div class="pattern-layer rotate-me" style="background-image: url(assets/images/shape/shape-34.png);"></div>
+    <div class="auto-container">
+        <div class="content-box">
+            <h1>Account Deatils</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="index.html">Home</a></li>
+                <li>Account Deatils</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- page-title end -->
+
+
+<!-- account-style-two -->
+<section class="account-details account-style-two account-page clear-bg pt_100 pb_100">
+    <div class="auto-container">
+        <div class="upper-box centred mb_65">
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6 col-sm-12 account-block">
+                    <div class="account-block-two wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="icon-16"></i></div>
+                            <h3><a href="account-details.html">Professional Account</a></h3>
+                            <p>Traders with professional accounts gain access to a wide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 account-block">
+                    <div class="account-block-two wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="icon-17"></i></div>
+                            <h3><a href="account-details.html">Overview Account</a></h3>
+                            <p>The primary feature of a trading overview account is its ability to</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 account-block">
+                    <div class="account-block-two wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="icon-18"></i></div>
+                            <h3><a href="account-details.html">Demo Account</a></h3>
+                            <p>Trading demo accounts are particularly valuable for novice</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 account-block">
+                    <div class="account-block-two wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="icon-box"><i class="icon-19"></i></div>
+                            <h3><a href="account-details.html">Islamic Account</a></h3>
+                            <p>Islamic accounts also adhere to ethical guidelines that prohibit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-box align-1 pt_65">
+                <p>Trading accounts can vary widely based on the investor's needs and preferences. Common types include cash accounts, margin accounts, retirement accounts and specialty accounts for options or futures trading. Each trading account is assigned a unique identification number by the brokerage firm or financial institution. This number serves as a reference for all transactions and communications related to the account.</p>
+            </div>
+        </div>
+        <figure class="image-box mb_60"><img src="assets/images/resource/account-1.jpg" alt=""></figure>
+        <div class="account-info">
+            <h2>Professional Account Info</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a lobortis tortor, sit amet congue purus. Maecenas pharetra lacus quis nisi porta facilisis. Morbi fermentum bibendum arcu, a porttitor eros volutpat et. Praesent nec magna tincidunt, placerat justo non, egestas quam.</p>
+            <div class="info-inner">
+                <ul class="info-list clearfix">
+                    <li><span>Initial Deposit</span><span>$100</span></li>
+                    <li><span>Leverage</span><span>Upto 1:3000</span></li>
+                    <li><span>Spread</span><span>Fixed from 5 pis</span></li>
+                    <li><span>Multi Language CC</span><span>Yes</span></li>
+                </ul>
+                <ul class="info-list clearfix">
+                    <li><span>Order Volume</span><span>0.01 – 500 lots</span></li>
+                    <li><span>24/7 Support</span><span>Yes</span></li>
+                    <li><span>Friendly & Expert</span><span>Yes</span></li>
+                    <li><span>Award Winner</span><span>Big Bonus</span></li>
+                </ul>
+            </div>
+            <h3>Benefits</h3>
+            <ul class="list-item clearfix">
+                <li>Portfolio Diversification</li>
+                <li>Access to Global Markets</li>
+                <li>Flexibility and Control</li>
+                <li>Potential for Profit</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- account-style-two end -->
+
+
+<!-- subscribe-section -->
+<section class="subscribe-section">
+    <div class="bg-color"></div>
+    <div class="auto-container">
+        <div class="inner-container">
+            <div class="shape" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-column">
+                    <div class="text-box">
+                        <h2>Subscribe for latest update</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 form-column">
+                    <div class="form-inner">
+                        <form method="post" action="contact.php">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                                <button type="submit" class="theme-btn btn-one">Subscribe<i class="icon-26"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- subscribe-section end -->
+
+
+
+<link id="reb-mobile-auth-home-v36" rel="stylesheet" href="/assets/css/reb-mobile-auth-home-v36.css?v=20260809-v36">

@@ -1,0 +1,1531 @@
+<link rel="stylesheet" href="assets/css/standard-font-safe.css">
+ <!DOCTYPE html>
+ <html lang="zxx">
+ <!--<< Head Area >>-->
+ <?php include './partials/head.php' ?>
+
+ <body>
+ <div class="boxed_wrapper ltr <?php echo (isset($themeMode) && $themeMode) ? 'dark_home' : ''; ?>">
+
+         <!-- Preloader -->
+         <?php include './partials/preloader.php' ?>
+
+         <!-- page-direction -->
+         <?php include './partials/pagedirection.php' ?>
+
+         <!--Search Popup-->
+         <?php include './partials/searchPopup.php' ?>
+ 
+<!-- Main Header -->
+<?php 
+        // Get the current page filename without extension
+         
+        
+        switch ($page) {
+            case 'header1':
+                include './partials/header.php';
+                break;
+            case 'header2':
+                include './partials/header-2.php';
+                break;
+            case 'header3':
+                include './partials/header-3.php';
+                break;
+            case 'header4':
+                include './partials/header-4.php';
+                break;
+            case 'header5':
+                include './partials/header-5.php';
+                break;
+            
+            default:
+                '';
+        }
+        ?>
+        <!-- Main Header End -->
+         <!-- Mobile Menu -->
+         <?php include './partials/MobileMenu.php' ?>
+         <!-- End Mobile Menu -->
+
+
+<!-- page-title -->
+<section class="page-title centred pt_90 pb_0">
+    <div class="pattern-layer rotate-me" style="background-image: url(assets/images/shape/shape-34.png);"></div>
+    <div class="auto-container">
+        <div class="content-box">
+            <h1>Markets Details</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="index.html">Home</a></li>
+                <li>Markets Details</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- page-title end -->
+
+
+<!-- trading-style-five -->
+<section class="trading-style-five pt_90 pb_100">
+    <div class="auto-container">
+        <div class="sec-title centred pb_60">
+            <span class="sub-title mb_14">Trade Now</span>
+            <h2>Market Spreads and Swaps</h2>
+        </div>
+        <div class="inner-container">
+            <div class="tabs-box">
+                <ul class="tab-btns tab-buttons shop-tab-btn clearfix">
+                    <li class="tab-btn active-btn" data-tab="#tab-1">Share</li>
+                    <li class="tab-btn" data-tab="#tab-2">Forex</li>
+                    <li class="tab-btn" data-tab="#tab-3">Indices</li>
+                    <li class="tab-btn" data-tab="#tab-4">Metals</li>
+                    <li class="tab-btn" data-tab="#tab-5">Commodities</li>
+                </ul>
+                <div class="tabs-content">
+                    <div class="tab active-tab" id="tab-1">
+                        <div class="table-outer">
+                            <table class="trading-table">
+                                <thead>
+                                    <tr>
+                                        <td>Markets</td>
+                                        <td>Bid</td>
+                                        <td>Ask</td>
+                                        <td>Action</td>
+                                        <td>Spread</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-9.png" alt=""><span>BTCUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>63,996.20</td>
+                                        <td>64,996.20</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+1.54%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-10.png" alt=""><span>ETHUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>3,320.27</td>
+                                        <td>3,520.27</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+6.25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-11.png" alt=""><span>SOLUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>143.930</td>
+                                        <td>153.930</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-5.62%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-12.png" alt=""><span>GLMUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.47080</td>
+                                        <td>0.57080</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+3.42%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-13.png" alt=""><span>1000PEREUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.1076125</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+8.21%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-14.png" alt=""><span>NEARUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.2076125</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-1.42%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab" id="tab-2">
+                        <div class="table-outer">
+                            <table class="trading-table">
+                                <thead>
+                                    <tr>
+                                        <td>Markets</td>
+                                        <td>Bid</td>
+                                        <td>Ask</td>
+                                        <td>Action</td>
+                                        <td>Spread</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-9.png" alt=""><span>BTCUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>63,996.20</td>
+                                        <td>64,996.20</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+1.54%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-10.png" alt=""><span>ETHUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>3,320.27</td>
+                                        <td>3,520.27</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+6.25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-11.png" alt=""><span>SOLUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>143.930</td>
+                                        <td>153.930</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-5.62%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-12.png" alt=""><span>GLMUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.47080</td>
+                                        <td>0.57080</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+3.42%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-13.png" alt=""><span>1000PEREUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.1076125</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+8.21%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-14.png" alt=""><span>NEARUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.2076125</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-1.42%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab" id="tab-3">
+                        <div class="table-outer">
+                            <table class="trading-table">
+                                <thead>
+                                    <tr>
+                                        <td>Markets</td>
+                                        <td>Bid</td>
+                                        <td>Ask</td>
+                                        <td>Action</td>
+                                        <td>Spread</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-9.png" alt=""><span>BTCUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>63,996.20</td>
+                                        <td>64,996.20</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+1.54%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-10.png" alt=""><span>ETHUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>3,320.27</td>
+                                        <td>3,520.27</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+6.25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-11.png" alt=""><span>SOLUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>143.930</td>
+                                        <td>153.930</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-5.62%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-12.png" alt=""><span>GLMUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.47080</td>
+                                        <td>0.57080</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+3.42%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-13.png" alt=""><span>1000PEREUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.1076125</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+8.21%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-14.png" alt=""><span>NEARUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.2076125</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-1.42%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab" id="tab-4">
+                        <div class="table-outer">
+                            <table class="trading-table">
+                                <thead>
+                                    <tr>
+                                        <td>Markets</td>
+                                        <td>Bid</td>
+                                        <td>Ask</td>
+                                        <td>Action</td>
+                                        <td>Spread</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-9.png" alt=""><span>BTCUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>63,996.20</td>
+                                        <td>64,996.20</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+1.54%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-10.png" alt=""><span>ETHUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>3,320.27</td>
+                                        <td>3,520.27</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+6.25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-11.png" alt=""><span>SOLUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>143.930</td>
+                                        <td>153.930</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-5.62%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-12.png" alt=""><span>GLMUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.47080</td>
+                                        <td>0.57080</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+3.42%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-13.png" alt=""><span>1000PEREUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.1076125</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+8.21%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-14.png" alt=""><span>NEARUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.2076125</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-1.42%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab" id="tab-5">
+                        <div class="table-outer">
+                            <table class="trading-table">
+                                <thead>
+                                    <tr>
+                                        <td>Markets</td>
+                                        <td>Bid</td>
+                                        <td>Ask</td>
+                                        <td>Action</td>
+                                        <td>Spread</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-9.png" alt=""><span>BTCUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>63,996.20</td>
+                                        <td>64,996.20</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+1.54%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-10.png" alt=""><span>ETHUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>3,320.27</td>
+                                        <td>3,520.27</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+6.25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-11.png" alt=""><span>SOLUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>143.930</td>
+                                        <td>153.930</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-5.62%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-12.png" alt=""><span>GLMUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.47080</td>
+                                        <td>0.57080</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+3.42%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-13.png" alt=""><span>1000PEREUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.1076125</td>
+                                        <td class="upper">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-1.png" alt="">
+                                                <i class="icon-08"></i>
+                                            </div>
+                                        </td>
+                                        <td class="upper">+8.21%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/icon-14.png" alt=""><span>NEARUSDT</span>
+                                            </div>
+                                        </td>
+                                        <td>0.0076125</td>
+                                        <td>0.2076125</td>
+                                        <td class="lower">
+                                            <div class="single-item">
+                                                <img src="assets/images/icons/chart-2.png" alt="">
+                                                <i class="icon-09"></i>
+                                            </div>
+                                        </td>
+                                        <td class="lower">-1.42%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-content">
+                <div class="btn-box mr_20"><a href="index-3.html" class="theme-btn btn-one">Get Started</a></div>
+                <p><a href="index-3.html">Sing up now</a> to create your own portfolio for free!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- trading-style-five end -->
+
+
+<!-- trading-style-six -->
+<section class="trading-style-six light-section pt_100 pb_100">
+    <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-17.png);"></div>
+    <div class="auto-container">
+        <div class="sec-title light centred pb_60">
+            <span class="sub-title mb_14">Trade Now</span>
+            <h2>Market Spreads and Swaps</h2>
+        </div>
+        <div class="tabs-box">
+            <ul class="tab-btns tab-buttons mb_20 clearfix">
+                <li class="tab-btn active-btn" data-tab="#tab-6">Forex</li>
+                <li class="tab-btn" data-tab="#tab-7">Cryto CFDs</li>
+                <li class="tab-btn" data-tab="#tab-8">Share CFDs</li>
+                <li class="tab-btn" data-tab="#tab-9">Commondities</li>
+                <li class="tab-btn" data-tab="#tab-10">Spot Metals</li>
+                <li class="tab-btn" data-tab="#tab-11">Energies</li>
+                <li class="tab-btn" data-tab="#tab-12">Indices</li>
+            </ul>
+            <div class="tabs-content">
+                <div class="tab active-tab" id="tab-6">
+                    <div class="table-outer">
+                        <ul class="table-content">
+                            <li class="table-title">
+                                <p>instrument</p>
+                                <p><span class="mr_80">sellers</span><span>Buyers</span></p>
+                                <p></p>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-3.png" alt=""></div>
+                                    <h6>Euro</h6>
+                                    <span>Adyen: xams . EUR</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="32%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">32%</span>
+                                        <span class="buyers">68%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-5.png" alt=""></div>
+                                    <h6>Pound</h6>
+                                    <span>Adyen: xams . GBP</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="55%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">55%</span>
+                                        <span class="buyers">45%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-9.png" alt=""></div>
+                                    <h6>Riyal</h6>
+                                    <span>Adyen: xams . RYL</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="30%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">30%</span>
+                                        <span class="buyers">70%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-7.png" alt=""></div>
+                                    <h6>CAD</h6>
+                                    <span>Adyen: xams . CAD</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="50%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">50%</span>
+                                        <span class="buyers">50%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-1.png" alt=""></div>
+                                    <h6>Aud</h6>
+                                    <span>Adyen: xams . Aud</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="60%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">60%</span>
+                                        <span class="buyers">40%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab" id="tab-7">
+                    <div class="table-outer">
+                        <ul class="table-content">
+                            <li class="table-title">
+                                <p>instrument</p>
+                                <p><span class="mr_80">sellers</span><span>Buyers</span></p>
+                                <p></p>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-3.png" alt=""></div>
+                                    <h6>Euro</h6>
+                                    <span>Adyen: xams . EUR</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="32%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">32%</span>
+                                        <span class="buyers">68%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-5.png" alt=""></div>
+                                    <h6>Pound</h6>
+                                    <span>Adyen: xams . GBP</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="55%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">55%</span>
+                                        <span class="buyers">45%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-7.png" alt=""></div>
+                                    <h6>CAD</h6>
+                                    <span>Adyen: xams . CAD</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="50%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">50%</span>
+                                        <span class="buyers">50%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-9.png" alt=""></div>
+                                    <h6>Riyal</h6>
+                                    <span>Adyen: xams . RYL</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="30%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">30%</span>
+                                        <span class="buyers">70%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-1.png" alt=""></div>
+                                    <h6>Aud</h6>
+                                    <span>Adyen: xams . Aud</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="60%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">60%</span>
+                                        <span class="buyers">40%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab" id="tab-8">
+                    <div class="table-outer">
+                        <ul class="table-content">
+                            <li class="table-title">
+                                <p>instrument</p>
+                                <p><span class="mr_80">sellers</span><span>Buyers</span></p>
+                                <p></p>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-3.png" alt=""></div>
+                                    <h6>Euro</h6>
+                                    <span>Adyen: xams . EUR</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="32%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">32%</span>
+                                        <span class="buyers">68%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-7.png" alt=""></div>
+                                    <h6>CAD</h6>
+                                    <span>Adyen: xams . CAD</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="50%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">50%</span>
+                                        <span class="buyers">50%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-5.png" alt=""></div>
+                                    <h6>Pound</h6>
+                                    <span>Adyen: xams . GBP</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="55%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">55%</span>
+                                        <span class="buyers">45%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-9.png" alt=""></div>
+                                    <h6>Riyal</h6>
+                                    <span>Adyen: xams . RYL</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="30%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">30%</span>
+                                        <span class="buyers">70%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-1.png" alt=""></div>
+                                    <h6>Aud</h6>
+                                    <span>Adyen: xams . Aud</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="60%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">60%</span>
+                                        <span class="buyers">40%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab" id="tab-9">
+                    <div class="table-outer">
+                        <ul class="table-content">
+                            <li class="table-title">
+                                <p>instrument</p>
+                                <p><span class="mr_80">sellers</span><span>Buyers</span></p>
+                                <p></p>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-3.png" alt=""></div>
+                                    <h6>Euro</h6>
+                                    <span>Adyen: xams . EUR</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="32%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">32%</span>
+                                        <span class="buyers">68%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-5.png" alt=""></div>
+                                    <h6>Pound</h6>
+                                    <span>Adyen: xams . GBP</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="55%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">55%</span>
+                                        <span class="buyers">45%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-1.png" alt=""></div>
+                                    <h6>Aud</h6>
+                                    <span>Adyen: xams . Aud</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="60%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">60%</span>
+                                        <span class="buyers">40%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-9.png" alt=""></div>
+                                    <h6>Riyal</h6>
+                                    <span>Adyen: xams . RYL</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="30%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">30%</span>
+                                        <span class="buyers">70%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-7.png" alt=""></div>
+                                    <h6>CAD</h6>
+                                    <span>Adyen: xams . CAD</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="50%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">50%</span>
+                                        <span class="buyers">50%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab" id="tab-10">
+                    <div class="table-outer">
+                        <ul class="table-content">
+                            <li class="table-title">
+                                <p>instrument</p>
+                                <p><span class="mr_80">sellers</span><span>Buyers</span></p>
+                                <p></p>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-3.png" alt=""></div>
+                                    <h6>Euro</h6>
+                                    <span>Adyen: xams . EUR</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="32%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">32%</span>
+                                        <span class="buyers">68%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-9.png" alt=""></div>
+                                    <h6>Riyal</h6>
+                                    <span>Adyen: xams . RYL</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="30%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">30%</span>
+                                        <span class="buyers">70%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-5.png" alt=""></div>
+                                    <h6>Pound</h6>
+                                    <span>Adyen: xams . GBP</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="55%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">55%</span>
+                                        <span class="buyers">45%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-7.png" alt=""></div>
+                                    <h6>CAD</h6>
+                                    <span>Adyen: xams . CAD</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="50%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">50%</span>
+                                        <span class="buyers">50%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-1.png" alt=""></div>
+                                    <h6>Aud</h6>
+                                    <span>Adyen: xams . Aud</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="60%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">60%</span>
+                                        <span class="buyers">40%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab" id="tab-11">
+                    <div class="table-outer">
+                        <ul class="table-content">
+                            <li class="table-title">
+                                <p>instrument</p>
+                                <p><span class="mr_80">sellers</span><span>Buyers</span></p>
+                                <p></p>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-3.png" alt=""></div>
+                                    <h6>Euro</h6>
+                                    <span>Adyen: xams . EUR</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="32%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">32%</span>
+                                        <span class="buyers">68%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-5.png" alt=""></div>
+                                    <h6>Pound</h6>
+                                    <span>Adyen: xams . GBP</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="55%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">55%</span>
+                                        <span class="buyers">45%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-9.png" alt=""></div>
+                                    <h6>Riyal</h6>
+                                    <span>Adyen: xams . RYL</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="30%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">30%</span>
+                                        <span class="buyers">70%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-1.png" alt=""></div>
+                                    <h6>Aud</h6>
+                                    <span>Adyen: xams . Aud</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="60%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">60%</span>
+                                        <span class="buyers">40%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-7.png" alt=""></div>
+                                    <h6>CAD</h6>
+                                    <span>Adyen: xams . CAD</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="50%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">50%</span>
+                                        <span class="buyers">50%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab" id="tab-12">
+                    <div class="table-outer">
+                        <ul class="table-content">
+                            <li class="table-title">
+                                <p>instrument</p>
+                                <p><span class="mr_80">sellers</span><span>Buyers</span></p>
+                                <p></p>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-3.png" alt=""></div>
+                                    <h6>Euro</h6>
+                                    <span>Adyen: xams . EUR</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="32%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">32%</span>
+                                        <span class="buyers">68%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-5.png" alt=""></div>
+                                    <h6>Pound</h6>
+                                    <span>Adyen: xams . GBP</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="55%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">55%</span>
+                                        <span class="buyers">45%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-7.png" alt=""></div>
+                                    <h6>CAD</h6>
+                                    <span>Adyen: xams . CAD</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="50%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">50%</span>
+                                        <span class="buyers">50%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-9.png" alt=""></div>
+                                    <h6>Riyal</h6>
+                                    <span>Adyen: xams . RYL</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="30%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">30%</span>
+                                        <span class="buyers">70%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                            <li class="table-data">
+                                <div class="single-item">
+                                    <div class="flag"><img src="assets/images/icons/flag-1.png" alt=""></div>
+                                    <h6>Aud</h6>
+                                    <span>Adyen: xams . Aud</span>
+                                </div>
+                                <div class="progress-box">
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="60%"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span class="sellers">60%</span>
+                                        <span class="buyers">40%</span>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="account-details.html">Trade</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- trading-style-six end -->
+
+
+<!-- process-style-two -->
+<section class="process-style-two pt_80 pb_100">
+    <div class="auto-container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div class="image_block_one">
+                    <div class="image-box pr_130 mr_40 pl_150">
+                        <figure class="image image-1"><img src="assets/images/resource/mockup-4.png" alt=""></figure>
+                        <figure class="image image-2 p_absolute r_0 b_50"><img src="assets/images/resource/dashboard-4.png" alt=""></figure>
+                        <div class="content-one">
+                            <div class="shape" style="background-image: url(assets/images/shape/shape-30.png);"></div>
+                            <span>Sales</span>
+                            <h3>1.25 kk</h3>
+                            <p>Washington, D.C.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                <div class="content_block_seven">
+                    <div class="content-box">
+                        <div class="sec-title pb_50">
+                            <span class="sub-title mb_14">About US</span>
+                            <h2>Our reputation is built on <span>Experience</span></h2>
+                        </div>
+                        <ul class="accordion-box">
+                            <li class="accordion block active-block">
+                                <div class="acc-btn active">
+                                    <div class="icon-box"><i class="icon-29"></i></div>
+                                    <h3>Who we are</h3>
+                                </div>
+                                <div class="acc-content current">
+                                    <div class="content">
+                                        <p>Facilitating international payments and foreign exchange transactions, issuing credit cards, and more.</p>
+                                        <a href="faq.html">Learn More</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">
+                                    <div class="icon-box"><i class="icon-29"></i></div>
+                                    <h3>What we do</h3>
+                                </div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <p>Facilitating international payments and foreign exchange transactions, issuing credit cards, and more.</p>
+                                        <a href="faq.html">Learn More</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">
+                                    <div class="icon-box"><i class="icon-29"></i></div>
+                                    <h3>How it works</h3>
+                                </div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <p>Facilitating international payments and foreign exchange transactions, issuing credit cards, and more.</p>
+                                        <a href="faq.html">Learn More</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- process-style-two end -->
+
+
+<!-- subscribe-section -->
+<section class="subscribe-section">
+    <div class="bg-color"></div>
+    <div class="auto-container">
+        <div class="inner-container">
+            <div class="shape" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-column">
+                    <div class="text-box">
+                        <h2>Subscribe for latest update</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 form-column">
+                    <div class="form-inner">
+                        <form method="post" action="contact.php">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                                <button type="submit" class="theme-btn btn-one">Subscribe<i class="icon-26"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- subscribe-section end -->
+
+
+
+<link id="reb-mobile-auth-home-v36" rel="stylesheet" href="/assets/css/reb-mobile-auth-home-v36.css?v=20260809-v36">
