@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- REB_DASHBOARD_ROUTE_SYNC_V2_20260810 -->
 <!-- REB_DASHBOARD_CLEAN_URL_V1_20260810 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -976,11 +977,15 @@ document.addEventListener('DOMContentLoaded', function () {
 <script>
 (function(){
   const REAL_BACKEND_API='https://admin.reachempirebot.com';
+  const IS_LOCAL_HOST=['localhost','127.0.0.1'].includes(window.location.hostname);
   const API_PARAM=new URLSearchParams(window.location.search).get('api');
-  if(API_PARAM) localStorage.setItem('REB_API_BASE',API_PARAM);
-  let SAVED_API=localStorage.getItem('REB_API_BASE')||'';
-  if(SAVED_API.replace(/\/$/,'')===window.location.origin.replace(/\/$/,'')) SAVED_API='';
-  const API_BASE=(API_PARAM||SAVED_API||window.REB_API_BASE||REAL_BACKEND_API).replace(/\/$/,'');
+  if(!IS_LOCAL_HOST){
+    localStorage.removeItem('REB_API_BASE');
+  }else if(API_PARAM){
+    localStorage.setItem('REB_API_BASE',API_PARAM);
+  }
+  const SAVED_API=IS_LOCAL_HOST?(localStorage.getItem('REB_API_BASE')||''):'';
+  const API_BASE=(IS_LOCAL_HOST?(API_PARAM||SAVED_API||window.REB_API_BASE||REAL_BACKEND_API):REAL_BACKEND_API).replace(/\/$/,'');
   let token=localStorage.getItem('REB_CLIENT_TOKEN')||'';
   let stored={};
   let cachedStatus={};
@@ -1279,9 +1284,20 @@ async function loadSignals(){
   });
   loadBackendData();
   loadSignals();
-if(token&&!isPendingSession())setInterval(loadSignals,10000);
-document.addEventListener('visibilitychange',()=>{if(!document.hidden)loadSignals();});
-window.addEventListener('focus',loadSignals);
+  if(token&&!isPendingSession()){
+    setInterval(loadBackendData,5000);
+    setInterval(loadSignals,10000);
+  }
+  document.addEventListener('visibilitychange',()=>{
+    if(!document.hidden){
+      loadBackendData();
+      loadSignals();
+    }
+  });
+  window.addEventListener('focus',()=>{
+    loadBackendData();
+    loadSignals();
+  });
   if(isPendingSession()) setInterval(checkSignupStatus,30000);
 })();
 </script>
