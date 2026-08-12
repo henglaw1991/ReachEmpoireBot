@@ -1,0 +1,119 @@
+<!-- REB desktop auth: final cascade override. Keep immediately before </body>. -->
+<style id="reb-desktop-auth-final-override-v3">
+@media (min-width:768px){
+  html body .reb-top{
+    box-sizing:border-box!important;
+    width:100%!important;
+    padding:12px 5.5vw!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:18px!important;
+    position:relative!important;
+  }
+  html body .reb-top .reb-actions,
+  html body .reb-top .reb-login,
+  html body.reb-home .main-header .header-top .option-block{
+    box-sizing:border-box!important;
+    display:flex!important;
+    grid-template-columns:none!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:14px!important;
+    width:auto!important;
+    max-width:none!important;
+    flex:0 0 auto!important;
+    position:absolute!important;
+    top:50%!important;
+    left:auto!important;
+    bottom:auto!important;
+    margin:0!important;
+    padding:0!important;
+    background:transparent!important;
+    border:0!important;
+    outline:0!important;
+    border-radius:0!important;
+    box-shadow:none!important;
+    transform:translateY(-50%)!important;
+  }
+  /* Subpage top bar uses the same 5.5vw right edge as its menu frame. */
+  html body:not(.reb-home) .reb-top .reb-actions,
+  html body:not(.reb-home) .reb-top .reb-login{
+    right:5.5vw!important;
+  }
+  /* Home already sits inside the aligned large-container: do not add a second inset. */
+  html body.reb-home .main-header .header-top .large-container,
+  html body.reb-home .main-header .header-top .top-inner{
+    position:relative!important;
+  }
+  html body.reb-home .main-header .header-top .option-block{
+    right:0!important;
+  }
+  html body .reb-top .reb-actions>a,
+  html body .reb-top .reb-login>a,
+  html body.reb-home .main-header .header-top .option-block>a{
+    box-sizing:border-box!important;
+    display:inline-flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:none!important;
+    height:44px!important;
+    min-height:44px!important;
+    max-height:44px!important;
+    margin:0!important;
+    padding:0 20px!important;
+    border-radius:8px!important;
+    background-image:none!important;
+    font-family:Ubuntu,Arial,sans-serif!important;
+    font-size:15px!important;
+    font-style:normal!important;
+    font-weight:800!important;
+    line-height:1!important;
+    letter-spacing:0!important;
+    text-align:center!important;
+    text-decoration:none!important;
+    text-transform:none!important;
+    white-space:nowrap!important;
+    box-shadow:none!important;
+    transform:none!important;
+  }
+  html body .reb-top .reb-actions>a[href*="/signup/"],
+  html body .reb-top .reb-login>a[href*="/signup/"],
+  html body.reb-home .main-header .header-top .option-block>a[href*="/signup/"]{
+    width:104px!important;
+    background:#f5b026!important;
+    border:1px solid #f5b026!important;
+    color:#070707!important;
+  }
+  html body .reb-top .reb-actions>a[href*="/login/"],
+  html body .reb-top .reb-login>a[href*="/login/"],
+  html body.reb-home .main-header .header-top .option-block>a[href*="/login/"]{
+    width:92px!important;
+    background:#101312!important;
+    border:1px solid rgba(255,255,255,.45)!important;
+    color:#fff!important;
+  }
+  html body .reb-top a[href*="/signup/"]::before,
+  html body .reb-top a[href*="/signup/"]::after,
+  html body .reb-top a[href*="/login/"]::before,
+  html body .reb-top a[href*="/login/"]::after{
+    content:none!important;
+    display:none!important;
+  }
+  html body.reb-home .main-header .header-top .option-block .language-picker{display:none!important}
+  html body .reb-top .reb-auth-logged-in>.reb-session-account{
+    background:#181b18!important;
+    border:1px solid #a27618!important;
+    color:#fff!important;
+  }
+  html body .reb-top .reb-auth-logged-in>.reb-session-logout{
+    background:#321919!important;
+    border:1px solid #8b3b3b!important;
+    color:#fff!important;
+  }
+}
+</style>
