@@ -1,0 +1,114 @@
+/* ReachEmpireBot Home mobile authenticated controls.
+   This is intentionally Home-only while the layout is being approved. */
+@media (max-width: 767px) {
+  html body.reb-home .main-header .header-top {
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    margin: 0 !important;
+    padding: 7px 14px !important;
+    overflow: hidden !important;
+  }
+
+  /* The header owns two wrapper layers.  Make both wrappers use the full
+     mobile width so the auth group can align to the same 14px right edge as
+     the menu button below. */
+  html body.reb-home .main-header .header-top > .large-container,
+  html body.reb-home .main-header .header-top > .large-container > .top-inner {
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  html body.reb-home .main-header .header-top .support-box,
+  html body.reb-home .main-header .header-top .language-picker {
+    display: none !important;
+  }
+
+  html body.reb-home .reb-top .reb-actions.reb-auth-logged-in,
+  html body.reb-home .reb-top .reb-login.reb-auth-logged-in,
+  html body.reb-home .main-header .header-top .option-block.reb-auth-logged-in {
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    width: auto !important;
+    max-width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    margin: 0 0 0 auto !important;
+    margin-right: 0 !important;
+    padding: 4px !important;
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+    background: #111513 !important;
+    border: 1px solid rgba(245, 176, 38, .48) !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+  }
+
+  html body.reb-home .reb-top .reb-actions.reb-auth-logged-in > a,
+  html body.reb-home .reb-top .reb-login.reb-auth-logged-in > a,
+  html body.reb-home .main-header .header-top .option-block.reb-auth-logged-in > a {
+    box-sizing: border-box !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    margin: 0 !important;
+    padding: 0 15px !important;
+    position: static !important;
+    transform: none !important;
+    border-radius: 9px !important;
+    color: #fff !important;
+    font-family: Ubuntu, Arial, Helvetica, sans-serif !important;
+    font-size: 13px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+    line-height: 40px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    box-shadow: none !important;
+  }
+
+  html body.reb-home .main-header .header-top .option-block.reb-auth-logged-in > .reb-session-account,
+  html body.reb-home .reb-top .reb-auth-logged-in > .reb-session-account {
+    display: block !important;
+    flex: 0 1 auto !important;
+    max-width: calc(100vw - 132px) !important;
+    background: #181b18 !important;
+    border: 1px solid #a27618 !important;
+  }
+
+  html body.reb-home .main-header .header-top .option-block.reb-auth-logged-in > .reb-session-logout,
+  html body.reb-home .reb-top .reb-auth-logged-in > .reb-session-logout {
+    display: inline-flex !important;
+    flex: 0 0 auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #321919 !important;
+    border: 1px solid #8b3b3b !important;
+  }
+}

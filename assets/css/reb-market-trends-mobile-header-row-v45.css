@@ -1,0 +1,35 @@
+/* Market Trends mobile panel headers: keep title and metadata on one row. */
+@media (max-width: 767px) {
+  html body.reb-market-trends-page .reb-chart-panel > .reb-panel-head,
+  html body.reb-market-trends-page .reb-intel-panel > .reb-panel-head {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) max-content !important;
+    align-items: center !important;
+    column-gap: 8px !important;
+    padding: 14px !important;
+  }
+
+  html body.reb-market-trends-page .reb-chart-panel > .reb-panel-head h2,
+  html body.reb-market-trends-page .reb-intel-panel > .reb-panel-head h2 {
+    min-width: 0 !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    overflow-wrap: normal !important;
+  }
+
+  html body.reb-market-trends-page .reb-chart-panel > .reb-panel-head span,
+  html body.reb-market-trends-page .reb-intel-panel > .reb-panel-head span {
+    width: auto !important;
+    max-width: none !important;
+    flex: none !important;
+    font-size: 9.5px !important;
+    line-height: 1.2 !important;
+    text-align: right !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+  }
+}
