@@ -1,0 +1,51 @@
+REACHEMPIREBOT AUTOMATIC MARKET TRENDS - DEPLOYMENT
+Build date: 2026-08-11
+
+ARCHITECTURE
+- TradingView is used only for the visual live chart.
+- The Backend downloads OHLC candles and calculates ICT-style market analysis.
+- No TradingView subscription, Pine alert, webhook or webhook secret is required.
+- Frontend and Backend remain separate deployments.
+
+BACKEND FILES (provided in the separate Backend ZIP)
+1. server.py
+2. market_trends_auto.py
+
+BACKEND DEPLOYMENT
+1. Back up the current production server.py and database.
+2. Put the new server.py and market_trends_auto.py in the SAME Backend folder.
+3. Do not delete or replace the current database.
+4. Restart the Backend service.
+5. Test in a browser:
+   https://admin.reachempirebot.com/api/market-trends?symbol=OANDA:XAUUSD&timeframe=5
+6. A successful response contains:
+   "mode": "automatic_ohlc"
+   "automatic": true
+   and populated trend/structure/price fields.
+
+FRONTEND DEPLOYMENT
+1. Upload/replace the Frontend files from the separate Website ZIP.
+2. Hard refresh the browser with Ctrl+F5.
+3. Open /market-trends/ and click Load Market.
+
+ANALYSIS OUTPUT
+- UPTREND, DOWNTREND or SIDEWAYS
+- Bullish/Bearish BOS or MSS when confirmed
+- BUY BIAS, SELL BIAS or WAIT
+- BSL/SSL liquidity sweep
+- Active FVG and IFVG counts
+- ADX trend strength
+- Latest swing Support and Resistance
+- EMA20, EMA50 and ATR are included in the API payload
+
+DATA AND SAFETY
+- Uses the same Yahoo Finance chart-data family already used by the Website Market Price Bar.
+- Uses Python standard-library networking; no new API key or paid package is required.
+- Results are cached briefly to protect the provider and Backend.
+- Analysis records are saved only in the dedicated market_trend_signals table.
+- Bot Tool, EA, Client, account, copy-trading and risk-control logic are unchanged.
+- If OHLC data is temporarily unavailable, the API falls back to the most recent stored analysis.
+
+IMPORTANT
+- Analysis is informational and is not an order-entry instruction.
+- Some TradingView symbols are mapped to the closest Yahoo Finance market symbol.

@@ -1,0 +1,9 @@
+
+<!-- REPLACE SIGN UP BUTTON -->
+<a href="signup.html" class="top-signup-btn">Sign Up</a>
+
+<!-- REPLACE LOGIN BUTTON -->
+<a href="login.html" class="top-login-btn">Login</a>
+
+<!-- REPLACE HERO START BUTTON -->
+<a href="signup.html" class="hero-btn-primary">Start Auto Trading</a>

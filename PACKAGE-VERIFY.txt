@@ -1,0 +1,40 @@
+ReachEmpireBot Website - REAL LIVE DATA BUILD
+Build: 2026-08-11 TradingView Live Ticker Fix
+
+Verification markers:
+- Root folder name ends with REAL_LIVE_DATA_TRADINGVIEW_FIXED_20260811
+- index.html includes embed-widget-ticker-tape.js
+- Static fallback prices (BTC 64,250 / ETH 3,120 / XAU 2,358.40) are removed
+- When a live feed is blocked, the bar says "Live unavailable"
+- About Us desktop video is lifted 28px above the "24/7 Automation monitoring" box
+- All 40 HTML footer routes use &copy; without the broken Ã‚Â characters
+- Home desktop Windows icon is visible in Windows blue; mobile icon code is unchanged
+- Home authentication button reads "Log In" consistently with the other pages
+- Dashboard desktop shortcut boxes are hidden
+- Client Account Report equity rendering and Backend response normalization are fixed
+- ICT Signal Center supports Backend endpoint and response fallbacks
+- Dashboard sends both Bearer and X-Mobile-Token authentication headers required by Backend
+- Login accepts token, mobile_token, access_token, or session_token responses
+- All Website API clients use https://admin.reachempirebot.com and clear stale saved API URLs
+- Login extracts live session tokens from nested JSON or response headers
+- Snapshot-only login is blocked so Dashboard cannot incorrectly remain on cached data
+- Dashboard approval auto-login uses Backend-supported app version 1.6.0
+- New /market-trends/ page includes a TradingView chart, searchable symbol input, all standard timeframes, ICT trend cards and recent signal history
+- Market Trends uses automatic Backend OHLC analysis at https://admin.reachempirebot.com/api/market-trends; no TradingView alert is required
+- Auto ICT returns direction, structure, bias, sweep, FVG/IFVG, ADX, Support and Resistance
+- Desktop navigation remains inside each page header; the mobile drawer no longer detaches it below the footer on desktop
+- Home authentication text is Log In and the desktop Market Price Bar is raised by 5px
+- Backend server source is not bundled into the Frontend deployment archive
+- Market Trends navigation and footer links are included across the active website pages for desktop and mobile
+- Deploy server_fix34_market_trends_full_20260811.py and configure TRADINGVIEW_WEBHOOK_SECRET before enabling TradingView alerts
+- Market Trends does not load the legacy unified drawer script, preventing a duplicate raw navigation row below the desktop footer
+- Symbol, Timeframe and Load Market controls share identical label, control and helper rows on desktop and mobile
+- TradingView chart uses clean price action with its drawing toolbar; the cluttered automatic Pivot/EMA studies are removed
+- Pine defaults limit event labels to 10 and visible FVG/IFVG zones to 6, while showing only the latest Support/Resistance levels
+- Updated Pine indicator draws MSS/BOS labels, active FVG/IFVG zones and latest Support/Resistance levels
+
+Local test:
+1. Extract this ZIP as a NEW folder. Do not merge it into an older website folder.
+2. Open CMD inside this exact folder.
+3. Run: python -m http.server 8080
+4. Open an Incognito window at: http://localhost:8080/?build=real-live-20260811
